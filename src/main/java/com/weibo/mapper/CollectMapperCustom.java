@@ -1,0 +1,24 @@
+package com.weibo.mapper;
+
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
+
+import com.weibo.po.Collect;
+import com.weibo.po.CollectCustom;
+import com.weibo.po.CollectExample;
+import com.weibo.po.Page;
+
+public interface CollectMapperCustom {
+
+	// 收藏
+	void collect(CollectCustom collection);
+
+	// 取消收藏
+	void uncollect(CollectCustom collection);
+
+	// 该用户是否收藏
+	List<CollectCustom> isCollect(CollectCustom collect);
+
+	// 查询我的收藏列表
+	List<CollectCustom> queryMyCollection(Page<CollectCustom> page);
+}

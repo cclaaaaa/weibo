@@ -1,0 +1,15 @@
+html,body{
+	height: 100%;
+	background-color:aliceblue;
+}
+h3{
+		font-family:Georgia;
+		color: black;
+		font-style: italic;
+}
+span{
+	margin-top:-10px;
+}
+li{
+	margin-top:10px;
+}
